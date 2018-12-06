@@ -103,7 +103,10 @@ $result_drafted=$this->buyer_user->drafted_bid_information($email_id,1,'');
 					        						break;
 					        				}
 					        				?>
-					        				
+					        				<tr>
+					        					<td><?=$x?></td>
+					        					<td><a href="<?=$edit?>"<a href="<?=$send?>" class="btn-warning btn-sm"><i class="fa fa-question-circle" aria-hidden="true"></i> Query</a></td>
+					        				</tr>
 
 					        				<?php
 					        				# code...
@@ -138,7 +141,7 @@ $result_drafted=$this->buyer_user->drafted_bid_information($email_id,1,'');
 			<ol class="breadcrumb pull-right">
 				<li class="breadcrumb-item active"><a href="#" class="fa fa-home ">Home</a></li>
 				<li class="breadcrumb-item"><a href="javascript:;">Query Respond Bid of Technical Information</a></li>
-				<li class="breadcrumb-item active">Query Respond Bid of Technical Information</li>
+				<li class="breadcrumb-item active">Query Respond Bid Technical Information</li>
 			</ol>
 			<!-- end breadcrumb -->
 			<!-- begin page-header -->
@@ -187,9 +190,9 @@ $result_drafted=$this->buyer_user->drafted_bid_information($email_id,1,'');
 					        <thead>
 					            <tr>
 					                <th>Slno .</th>
-					                <th></th>
-					              	<th></th>
-					                <th></th>
+					                <th>Vendor Name</th>
+					              	<th>Query</th>
+					                <th>Respond</th>
 					            </tr>
 					        </thead>
 					        <tbody>

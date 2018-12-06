@@ -470,7 +470,7 @@ if($result_drafted['no_bid']!=1){
 													<label class="col-form-label col-md-3">Detail Description </label>
 													<div class="col-md-9">
 														<textarea class="form-control-plaintext" rows="3" name="bid_detail_description" required=""><?=$value_bid_dates->bid_detail_description?></textarea>
-													
+
 													</div>
 												</div>
 												<!-- part f end -->
@@ -603,8 +603,8 @@ if($result_drafted['no_bid']!=1){
 														<table class="table table-bordered" cellpadding="10" cellspacing="1" width="100%">
 									                        <thead>
 									                            <tr>
-									                                <th><strong>Check </strong></th>
-									                                <th><strong>Vendor View</strong></th>
+									                                <th><strong>Vendor Name </strong></th>
+									                                <th><strong>Vendor Details</strong></th>
 
 									                            </tr>
 									                        </thead>
@@ -618,20 +618,17 @@ if($result_drafted['no_bid']!=1){
 																						<?php
 																													if (in_array($Vendor_email_id, $value_bid_details_vendor,true)){
 																						?>
-										                                    		<td><input type="checkbox" checked name="vendor_array[]" value="<?=$Vendor_email_id?>"></td>
-																						<?php
-																													}else{
-																						?>
-																														<td><input type="checkbox" name="vendor_array[]" value="<?=$Vendor_email_id?>"></td>
+										                                    		<td> <?=$key_vendors->Vendor_name?></td>
+																														<td>
+
+																															<p>Organisation Name : <?=$key_vendors->Organisation_name?></p>
+																															<p>Vendor Mobile : <?=$key_vendors->Mobile_no?></p>
+																															<p>Vendor Address : <?=$key_vendors->Organisation_address?></p>
+																														</td>
 																						<?php
 																													}
-																					  ?>
-										                                    	<td>
-											                                    	<p>Vendor Name : <?=$key_vendors->Vendor_name?></p>
-											                                    		<p>Organisation Name : <?=$key_vendors->Organisation_name?></p>
-											                                    	<p>Vendor Mobile : <?=$key_vendors->Mobile_no?></p>
-											                                    	<p>Vendor Address : <?=$key_vendors->Organisation_address?></p>
-										                                    	</td>
+																													?>
+
 										                                </tr>
 									                         	 <?php
 									                         	 	 		}

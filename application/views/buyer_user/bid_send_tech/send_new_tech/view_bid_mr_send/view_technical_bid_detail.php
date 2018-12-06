@@ -611,21 +611,16 @@ foreach ($result_drafted_bid_details_vendor['bid_vendors_list'] as $key) {
 																					<?php
 																												if (in_array($Vendor_email_id, $value_bid_details_vendor,true)){
 																					?>
-																													<td><input type="checkbox" checked name="vendor_array[]" value="<?=$Vendor_email_id?>"></td>
-																					<?php
-																												}else{
-																					?>
-																													<td><input type="checkbox" name="vendor_array[]" value="<?=$Vendor_email_id?>"></td>
+																													<td><?=$key_vendors->Vendor_name?></td>
+																													<td>
+
+																														<p>Organisation Name : <?=$key_vendors->Organisation_name?></p>
+																														<p>Vendor Mobile : <?=$key_vendors->Mobile_no?></p>
+																														<p>Vendor Address : <?=$key_vendors->Organisation_address?></p>
+																													</td>
 																					<?php
 																												}
-																					?>
-
-																												<td>
-										                                    	<p>Vendor Name : <?=$key_vendors->Vendor_name?></p>
-										                                    		<p>Organisation Name : <?=$key_vendors->Organisation_name?></p>
-										                                    	<p>Vendor Mobile : <?=$key_vendors->Mobile_no?></p>
-										                                    	<p>Vendor Address : <?=$key_vendors->Organisation_address?></p>
-										                                    </td>
+																												?>
 
 										                                </tr>
 
